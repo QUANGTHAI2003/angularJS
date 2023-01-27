@@ -1,0 +1,244 @@
+<div class="product__layout">
+  <div class="container" ng-controller="swiperCtrl">
+    <h1 class="collection-name mb-lg-3 text-uppercase"> Tất cả sản phẩm </h1>
+    <div class="banner_collection mb-3 position-relative overflow-hidden" ng-swiper options="swiperBannerCollection">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide text-center effect-ming swiper-slide-prev" data-swiper-slide-index="0">
+          <a href="/">
+            <picture class="modal-open ratio1by3 aspect sitdown">
+              <source media="(min-width: 1200px)" srcset="./assets/images/banner_collec_1(large).webp">
+              <source media="(min-width: 992px)" srcset="./assets/images/banner_collec_1(large).webp">
+              <source media="(min-width: 569px)" srcset="./assets/images/banner_collec_1(small).webp">
+              <source media="(min-width: 480px)" srcset="./assets/images/banner_collec_1(small).webp">
+              <img class="d-block img img-cover position-absolute" src="./assets/images/banner_collec_1(small).webp" loading="lazy" alt="MewYummy">
+            </picture>
+          </a>
+        </div>
+        <div class="swiper-slide text-center effect-ming" data-swiper-slide-index="1">
+          <a href="/">
+            <picture class="modal-open ratio1by3 aspect sitdown">
+              <source media="(min-width: 1200px)" srcset="./assets/images/banner_collec_2(large).webp">
+              <source media="(min-width: 992px)" srcset="./assets/images/banner_collec_2(large).webp">
+              <source media="(min-width: 569px)" srcset="./assets/images/banner_collec_2(small).webp">
+              <source media="(min-width: 480px)" srcset="./assets/images/banner_collec_2(small).webp">
+              <img class="d-block img img-cover position-absolute" src="./assets/images/banner_collec_2(small).webp" loading="lazy" alt="MewYummy">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="swiper-button-prev mbc_prev d-md-flex"></div>
+      <div class="swiper-button-next mbc_next d-md-flex"></div>
+    </div>
+    <!-- Product Layout -->
+    <div class="row">
+      <div class="col-12 col-lg-3 d-none d-lg-block">
+        <div class="sidebar sidebar_mobi m-0 p-2 p-lg-0 mt-lg-1 d-flex
+          flex-column">
+          <h2 class="title-head"> Danh mục </h2>
+          <div class="list-group">
+            <a href="#!/products?cate={{cate.id}}" class="list-group-item list-group-item-action active" ng-repeat="cate in categories">{{cate.name}}</a>
+          </div>
+          <div class="aside-filter modal-open pr-md-2 order-lg-3">
+            <div class="filter-container row">
+              <aside class="aside-item filter-price mb-3 col-12 col-sm-12
+                col-lg-12">
+                <h3 class="title-body">Lọc giá</h3>
+                <div class="aside-content filter-group mb-1">
+                  <div class="row">
+                    <div class="col-6 col-lg-12 col-xl-6">
+                      <label for="minPriceLg">
+                        <input type="text" id="minPriceLg" class="form-control filter-range-from" value="" placeholder="Giá tối thiểu">
+                      </label>
+                    </div>
+                    <div class="col-6 col-lg-12 col-xl-6">
+                      <label for="maxPriceLg">
+                        <input type="text" id="maxPriceLg" class="form-control filter-range-to" value="" placeholder="Giá tối đa">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary js-filter-pricerange">Áp dụng </butt>
+              </aside>
+              <aside class="aside-item filter-type mb-3 col-12 col-sm-6
+                col-lg-12">
+                <h3 class="title-body">Loại</h3>
+                <div class="aside-content filter-group">
+                  <ul class="filter-type list-unstyled m-0">
+                    <li class="filter-item filter-item--check-box">
+                      <label data-filter="combo" for="filter-combo">
+                        <input class="form-check-input mt-0" id="filter-combo" type="checkbox">
+                        <i class="fa position-relative mr-2"></i> Combo </label>
+                    </li>
+                    <li class="filter-item filter-item--check-box">
+                      <label data-filter="hải sản sống" for="filter-hai-san-song">
+                        <input class="form-check-input mt-0" id="filter-hai-san-song" type="checkbox">
+                        <i class="fa position-relative mr-2"></i> Hải sản sống </label>
+                    </li>
+                    <li class="filter-item filter-item--check-box">
+                      <label data-filter="midnight-pop mew" for="filter-midnight-pop-mew">
+                        <input class="form-check-input mt-0" id="filter-midnight-pop-mew" type="checkbox">
+                        <i class="fa position-relative mr-2"></i> Midnight-Pop Mew </label>
+                    </li>
+                    <li class="filter-item filter-item--check-box">
+                      <label data-filter="thịt nhập khẩu" for="filter-thit-nhap-khau">
+                        <input class="form-check-input mt-0" id="filter-thit-nhap-khau" type="checkbox">
+                        <i class="fa position-relative mr-2"></i> Thịt nhập khẩu </label>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+              <div class="aside-item mb-2 pt-2 order-3 d-none d-lg-block ">
+                <a class="h2 title-head font-weight-bold big text-uppercase
+                  d-block mb-2 p-2 rounded" href="tin-tuc"> Mẹo ăn ngon </a>
+                <div class="list-blogs">
+                  <article class="blog-item">
+                    <div class="img_art thumb_img_blog_list">
+                      <a href="#" class="effect-ming">
+                        <div class="position-relative ratio3by2 rounded">
+                          <img src="./assets/images/trick1.webp" loading="lazy" class="lazy d-block img img-cover
+                            position-absolute rounded-3" alt="Hướng dẫn 5 cách
+                            làm món cá hồi sốt vừa ngon, vừa nhiều dinh
+                            dưỡng cho gia đình">
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="blog-item-name pl-3 m-0 position-relative
+                      line_3">
+                      <a href="#">Hướng dẫn 5 cách làm món cá hồi sốt vừa ngon, vừa nhiều dinh dưỡng cho gia đình</a>
+                    </h3>
+                  </article>
+                  <article class="blog-item">
+                    <div class="img_art thumb_img_blog_list">
+                      <a href="#" class="effect-ming">
+                        <div class="position-relative ratio3by2 rounded">
+                          <img src="./assets/images/trick2.webp" loading="lazy" class="lazy d-block img img-cover
+                            position-absolute rounded-3" alt="Tổng hợp những
+                            món ngon từ thịt bò giúp nồi cơm luôn sạch veo">
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="blog-item-name pl-3 m-0 position-relative
+                      line_3">
+                      <a href="#">Tổng hợp những món ngon từ thịt bò giúp nồi cơm luôn sạch veo</a>
+                    </h3>
+                  </article>
+                  <article class="blog-item">
+                    <div class="img_art thumb_img_blog_list">
+                      <a href="#" class="effect-ming">
+                        <div class="position-relative ratio3by2 rounded">
+                          <img src="./assets/images/trick3.webp" loading="lazy" class="lazy d-block img img-cover
+                            position-absolute rounded-3" alt="Hướng dẫn 05 cách
+                            chế biến cá bò thơm ngon hấp dẫn cho cả gia
+                            đình">
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="blog-item-name pl-3 m-0 position-relative
+                      line_3">
+                      <a href="#">Hướng dẫn 05 cách chế biến cá bò thơm ngon hấp dẫn cho cả gia đình</a>
+                    </h3>
+                  </article>
+                  <article class="blog-item">
+                    <div class="img_art thumb_img_blog_list">
+                      <a href="#" class="effect-ming">
+                        <div class="position-relative ratio3by2 rounded">
+                          <img src="./assets/images/trick4.webp" loading="lazy" class="lazy d-block img img-cover
+                            position-absolute rounded-3" alt="TOP 30+ món thịt
+                            bò ngon nhất vừa dễ làm lại tiết kiệm">
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="blog-item-name pl-3 m-0 position-relative
+                      line_3">
+                      <a href="#">TOP 30+ món thịt bò ngon nhất vừa dễ làm lại tiết kiệm</a>
+                    </h3>
+                  </article>
+                  <article>
+                    <div class="img_art thumb_img_blog_list">
+                      <a href="#" class="effect-ming">
+                        <div class="position-relative ratio3by2 rounded">
+                          <img src="./assets/images/trick5.webp" loading="lazy" class="lazy d-block img img-cover
+                            position-absolute rounded-3" alt="Top 16 món ăn hải
+                            sản ngon nổi tiếng không nên bỏ qua">
+                        </div>
+                      </a>
+                    </div>
+                    <h3 class="blog-item-name pl-3 m-0 position-relative
+                      line_3">
+                      <a href="#">Top 16 món ăn hải sản ngon nổi tiếng không nên bỏ qua</a>
+                    </h3>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-9 pt-3 pt-lg-0">
+        <div class="sortPagiBar pt-2 pb-2 border-bottom border-top">
+          <b>Sắp xếp: </b>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="sortName" class="form-check-input">A → Z </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="sortName" class="form-check-input">Z → A </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="sortPrice" class="form-check-input">Giá tăng dần </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="sortPrice" class="form-check-input">Giá giảm dần </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="sortTime" class="form-check-input
+                ">Mới nhất </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="sortTime" class="form-check-input
+                ">Cũ nhất </label>
+          </div>
+        </div>
+        <div class="collection mt-4">
+          <div class="category-products position-relative mt-4 mb-4">
+            <div class="row slider-items">
+              <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 product-grid-item-lm mb-3" ng-repeat="product in products">
+                <div class="card-item">
+                  <div class="sale-label sale-top-right position-absolute">
+                    <span class="fw-bold">- {{product.discount * 100}}% </span>
+                  </div>
+                  <a href="#!/products/{{product.id}}" class="thumb d-block modal-open">
+                    <div class="zoom">
+                      <img ng-src="{{product.image}}" loading="lazy" decoding="" class="d-block img img-cover
+                        position-absolute lazy" />
+                    </div>
+                  </a>
+                  <div class="item-info">
+                    <h3 class="item-title">
+                      <a class="d-block modal-open" href="#">{{product.name}}</a>
+                    </h3>
+                    <div class="item-price">
+                      <span class="special-price fw-bold me-2">{{product.formattedPrice}}</span>
+                      <del class="old-price" ng-if="product.oldPrice">{{product.formattedOldPrice}}</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link rounded text-center">«</a></li>
+              <li class="page-item active"><a class="page-link rounded text-center">1</a></li>
+              <li class="page-item"><a class="page-link rounded text-center">2</a></li>
+              <li class="page-item"><a class="page-link rounded text-center">»</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

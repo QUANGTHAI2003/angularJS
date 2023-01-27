@@ -1,0 +1,226 @@
+<!-- Header Section -->
+<header class="header py-3">
+  <div class="container-fluid container-lg">
+    <div class="row align-items-center">
+      <div class="col-3 col-lg-2">
+        <a href="/" class="logo">
+          <img src="./assets/images/logo.webp" loading="lazy" class="img-fluid
+          logo d-none
+          d-lg-block" />
+          <img src="./assets/images/logo_mobi.webp" loading="lazy" class="img-fluid logo
+          d-block d-lg-none" />
+        </a>
+      </div>
+      <div class="col-9 col-lg-10">
+        <div class="d-lg-flex align-items-center position-static ps-menu">
+          <div class="search__block me-3 me-xl-5" ng-controller="searchHeaderCtrl">
+            <form action="#" class="search__block-form" spellcheck="false" autocomplete="off">
+              <input type="text" class="search__block-input form-control" role="search" spellcheck="false" autofocus autocomplete="off" placeholder="Tìm kiếm sản phẩm ..." ng-model="searchTerm" ng-click="showResults=true" ng-keyup="hideResults()" />
+              <input type="submit" class="search__block-btn" value="" />
+              <!-- Search Result -->
+              <div id="searchResult" class="w-100 searchResult px-2 mx-lg-0" ng-show="showResults && searchTerm.length> 0">
+                <div class="overflow-auto search-result-warpper">
+                  <div class="d-block text-left h6 searchResult__product
+                  text-white">Sản phẩm ( <span>{{countResult}}</span> ) </div>
+                  <div class="searchResult-products">
+                    <div class="w-100" ng-repeat="result in productSearch">
+                      <a href="#!/products/{{result.id}}" title="{{result.name}}" class="d-flex align-items-start w-100 py-2
+                        result-item border-bottom align-item">
+                        <div class="result-item_image d-flex h-100
+                          align-items-center justify-content-center">
+                          <img alt="{{result.name}}" ng-src="{{result.image}}" class="result-item_image img-fluid">
+                        </div>
+                        <div class="result-item_detail px-2">
+                          <h3 class="result-item_name mb-1 fw-bold">{{result.name}}</h3>
+                          <div class="item-price d-flex align-items-center">
+                            <div class="special-price fw-bold me-2">{{result.formattedPrice}}</div>
+                            <del class="old-price" ng-if="result.oldPrice">{{result.formattedOldPrice}}</del>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- <div class="d-block text-left h6 searchResult__article
+                  text-white">Tin tức ( <span>0</span> ) </div>
+                  <div class="searchResult_articles"></div>
+                  <div class="d-block text-left h6 searchResult__text
+                  text-white"> Trang nội dung ( <span>0</span> ) </div>
+                  <div class="searchResult_pages"></div> -->
+                  <a href="#" class="btn my-0 all-result fw-bold">Xem tất cả kết quả</a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="info__block ms-2 me-2 d-none d-lg-block">
+            <a href="tel:0774060610">
+              <i class="fa-solid fa-phone-volume icon icon-outline"></i>
+              <b>Hotline: <br />0774060610 </b>
+            </a>
+          </div>
+          <div class="action__block d-none d-lg-block">
+            <div class="d-lg-flex align-items-stretch">
+              <div class="action__block-login p-2 btn-account d-lg-flex
+              me-3">
+                <i class="fa-solid fa-user icon icon-outline"></i>
+                <ul class="pop__login sub__menu">
+                  <li class="pop__login-list">
+                    <a href="#!/account" class="pop__login-link d-block
+                    fw-bold">Tài khoản</a>
+                  </li>
+                  <li class="pop__login-list">
+                    <a href="#!/login" class="pop__login-link d-block
+                    fw-bold">Đăng nhập</a>
+                  </li>
+                  <li class="pop__login-list">
+                    <a href="#!/register" class="pop__login-link d-block
+                    fw-bold">Đăng ký</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="#!/cart" class="btn-cart">
+                <span class="box-icon p-1">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </span>
+                <span class="cart__count">0</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Navbar Section -->
+<nav class="navbar me-lg-auto">
+  <div class="container">
+    <!-- PC Menu -->
+    <ul id="menu-pc" class="p-0 m-0 position-relative d-lg-flex d-none
+     d-lg-block">
+      <li class="main__menu pt-lg-2 pb-lg-2 active">
+        <a class="ps-lg-3 ps-2" href="/">Trang chủ</a>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3" href="#!/about">Về Mew Yummy</a>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2 pb-1 dropdown">
+        <a class="ps-lg-3" href="#!/products">Sản phẩm</a>
+        <i class="fa-solid fa-caret-down icon"></i>
+        <ul class="sub__menu">
+          <div class="row px-4 py-2">
+            <div class="col">
+              <li class="sub__menu-item">
+                <a href="#" class="sub__menu-link">Thịt, trứng</a>
+              </li>
+              <li class="sub__menu-item">
+                <a href="#" class="sub__menu-link">Hải sản</a>
+              </li>
+              <li class="sub__menu-item">
+                <a href="#" class="sub__menu-link">Rau củ</a>
+              </li>
+            </div>
+            <div class="col">
+              <li class="sub__menu-item">
+                <a href="#" class="sub__menu-link">Trái cây</a>
+              </li>
+              <li class="sub__menu-item">
+                <a href="#" class="sub__menu-link">Đồ khô</a>
+              </li>
+              <li class="sub__menu-item">
+                <a href="#" class="sub__menu-link">Gia vị</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3" href="#!/news">Tin tức</a>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3" href="#!/contact">Liên hệ</a>
+      </li>
+      <li class="ms-auto main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3" href="#">
+          <i class="fa-solid fa-map-location-dot icon"></i> Hệ thống cửa hàng </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="container">
+    <ul id="menu-mobi" class="d-lg-none">
+      <li class="main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3 ps-2 active" href="./index.html">
+          <i class="fa-solid fa-house icon"></i>
+          <span>Trang chủ</span>
+        </a>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2 menu">
+        <button class="ps-lg-3" data-bs-toggle="offcanvas" data-bs-target="#menuSidebar" aria-controls="menuSidebar">
+          <i class="fa-solid fa-bars icon"></i>
+          <span>Danh mục</span>
+        </button>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2 dropdown">
+        <a class="ps-lg-3" href="./contact.html">
+          <i class="fa-solid fa-phone-volume icon"></i>
+          <span>Liên hệ</span>
+        </a>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3" href="./account.html">
+          <i class="fa-solid fa-user icon"></i>
+          <span>Tài khoản</span>
+        </a>
+      </li>
+      <li class="main__menu pt-lg-2 pb-lg-2">
+        <a class="ps-lg-3" href="./cart.html">
+          <i class="fa-solid fa-cart-shopping icon"></i>
+          <span>Giỏ hàng</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section class="offcanvas offcanvas-start mx-3" data-bs-scroll="true" tabindex="-1" id="menuSidebar" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <ul class="nav__mobi">
+        <li class="nav__mobi-list">
+          <a href="./index.html" class="nav__mobi-link">Trang chủ</a>
+        </li>
+        <li class="nav__mobi-list">
+          <a href="./about.html" class="nav__mobi-link">Về Mew Yummy</a>
+        </li>
+        <li class="nav__mobi-list active">
+          <a href="./products.html" class="nav__mobi-link">Sản phẩm</a>
+        </li>
+        <li class="nav__mobi-list">
+          <a href="./news.html" class="nav__mobi-link">Tin tức</a>
+        </li>
+        <li class="nav__mobi-list">
+          <a href="./contact.html" class="nav__mobi-link">Liên hệ</a>
+        </li>
+      </ul>
+      <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+    </div>
+    <div class="offcanvas-body">
+      <ul class="menu__product">
+        <li class="menu__product-list">
+          <a href="#" class="menu__product-link me-2 ml-2">Thịt nướng</a>
+        </li>
+        <li class="menu__product-list">
+          <a href="#" class="menu__product-link me-2 ml-2">Hải sản</a>
+        </li>
+        <li class="menu__product-list">
+          <a href="#" class="menu__product-link me-2 ml-2">Rau củ</a>
+        </li>
+        <li class="menu__product-list">
+          <a href="#" class="menu__product-link me-2 ml-2">Trái cầy</a>
+        </li>
+        <li class="menu__product-list">
+          <a href="#" class="menu__product-link me-2 ml-2">Đồ khô</a>
+        </li>
+        <li class="menu__product-list">
+          <a href="#" class="menu__product-link me-2 ml-2">Gia vị</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</nav>

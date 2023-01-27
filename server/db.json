@@ -1,0 +1,206 @@
+{
+  "products": [
+      {
+          "id": 1,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro1.webp",
+          "discount": 0.2,
+          "name": "Ớt ngọt Đà Lạt",
+          "price": "35000",
+          "oldPrice": "28000",
+          "categoryProduct": 3
+      },
+      {
+          "id": 2,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro2.webp",
+          "discount": 0.4,
+          "name": "Hành tây củ",
+          "price": "15000",
+          "oldPrice": "28000",
+          "categoryProduct": 3
+      },
+      {
+          "id": 3,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro3.webp",
+          "discount": 0.2,
+          "name": "Snack lá ngắn",
+          "price": "60000",
+          "oldPrice": "75000",
+          "categoryProduct": 3
+      },
+      {
+          "id": 19,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro19.webp",
+          "discount": 0.2,
+          "name": "Chanh vàng không hạt",
+          "price": "35000",
+          "oldPrice": "55000",
+          "categoryProduct": 3
+      },
+      {
+          "id": 20,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro20.webp",
+          "discount": 0.25,
+          "name": "Cherry Đà Lạt",
+          "price": "405000",
+          "oldPrice": "600000",
+          "categoryProduct": 4
+      },
+      {
+          "id": 5,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro5.webp",
+          "discount": 0.2,
+          "name": "Nho không hạt",
+          "price": "250000",
+          "oldPrice": "300000",
+          "categoryProduct": 4
+      },
+      {
+          "id": 6,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro6.webp",
+          "discount": 0.1,
+          "name": "Thăn Lưng Bò Mỹ Black Angus , Rib Eye (500gr)",
+          "price": "450000",
+          "oldPrice": "500000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 14,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro14.webp",
+          "name": "Dẻ Sườn Bò Mỹ , Rib Finger (500gr)",
+          "price": "205000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 13,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro13.webp",
+          "name": "Sườn Non Bò Mỹ , Short Ribs (500gr)",
+          "price": "259000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 21,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro21.webp",
+          "name": "Ba Chỉ Bò Mỹ , Short Plate (500gr)",
+          "price": "180000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 15,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro15.webp",
+          "discount": 0.22,
+          "name": "Lõi Nạc Vai Bò Mỹ , Top Blade (500gr)",
+          "price": "194000",
+          "oldPrice": "250000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 8,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro8.webp",
+          "discount": 0.13,
+          "name": "Đầu Thăn Ngoại Bò Mỹ , Rib Eye (500gr)",
+          "price": "305000",
+          "oldPrice": "350000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 9,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro9.webp",
+          "discount": 0.7,
+          "name": "Thăn Ngoại Bò Mỹ , Striploin (500gr)",
+          "price": "325000",
+          "oldPrice": "350000",
+          "categoryProduct": 1
+      },
+      {
+          "id": 16,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro16.webp",
+          "name": "Ghẹ Xanh Sống",
+          "price": "325000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 10,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro10.webp",
+          "discount": 0.23,
+          "name": "Tôm Càng Xanh Sống",
+          "price": "340000",
+          "oldPrice": "440000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 22,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro22.webp",
+          "name": "Cá Tầm Sống",
+          "price": "445000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 17,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro17.webp",
+          "name": "Ngao Hai Cồi Sống",
+          "price": "130000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 18,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro18.webp",
+          "name": "Bào Ngư Hàn Quốc Sống Lớn",
+          "price": "750000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 23,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro23.webp",
+          "name": "Cồi Sò Điệp Size S",
+          "price": "170000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 10,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro10.webp",
+          "discount": 0.58,
+          "name": "Ốc Hương Sống (70-80con)",
+          "price": "125000",
+          "oldPrice": "295000",
+          "categoryProduct": 2
+      },
+      {
+          "id": 12,
+          "image": "https://mew-yummy.vercel.app/assets/images/products/pro12.webp",
+          "discount": 0.4,
+          "name": "Tôm Hùm Alaska Sống Lớn",
+          "price": "1290000",
+          "oldPrice": "1350000",
+          "categoryProduct": 2
+      }
+  ],
+  "categories": [
+      {
+          "id": 1,
+          "name": "Thịt"
+      },
+      {
+          "id": 2,
+          "name": "Hải Sản"
+      },
+      {
+          "id": 3,
+          "name": "Rau"
+      },
+      {
+          "id": 4,
+          "name": "Trái Cây"
+      }
+  ],
+  "users": [
+      {
+          "id": 1,
+          "name": "Trần Quang Thái",
+          "loginName": "tranquangthai",
+          "email": "thaitqpc04444gmail.com",
+          "phone": "077406061",
+          "address": "Cần Thơ",
+          "avatar": "https://thucphamtq.000webhostapp.com/upload/users/icon.jpg"
+      }
+  ]
+}

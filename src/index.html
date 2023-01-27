@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mewYummy">
+<head>
+  <base href="/" >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <link rel="stylesheet" href="./assets/libs/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/libs/css/select2.min.css">
+  <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/libs/font/fontawesome-free-6.2.1-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body >
+  <div ng-include="'./app/shared/header/header.view.html'" ng-hide="hideHeader"></div>
+  <ng-view></ng-view>
+  <div ng-include="'./app/shared/footer/footer.view.html'"></div>
+
+
+
+
+  <!-- Jquery -->
+  <script src="./assets/libs/js/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./assets/libs/js/bootstrap.bundle.min.js"></script>
+  <!-- Select2 -->
+  <script src="./assets/libs/js/select2.min.js"></script>
+  <!-- SwiperJs -->
+  <script src="./assets/libs/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/slider.js"></script>
+  <!-- AngularJs -->
+  <script src="./assets/libs/js/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+  <!-- <script src="./assets/libs/js/angular.min.js"></script> -->
+  <script src="./app/app.js"></script>
+  <script src="./app/components/products/productCtrl.js"></script>
+  <script src="./app/components/products/productDetailCtrl.js"></script>
+  <script src="./app/shared/directive/swiper.js"></script>
+  <script src="./app/shared/services/formatPrice.js"></script>
+  <script src="./app/shared/services/debounce.js"></script>
+  <script src="./app/shared/header/searchHeaderCtrl.js"></script>
+  <script src="./app/components/home/homeCtrl.js"></script>
+  <script src="./app/components/home/countdownCtrl.js"></script>
+  <script src="./app/components/login/loginCtrl.js"></script>
+
+  
+
+</body>
+</html>
